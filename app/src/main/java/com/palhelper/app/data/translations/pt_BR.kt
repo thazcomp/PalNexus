@@ -36,6 +36,9 @@ object PortugueseTranslations {
         "soralite_ingot" to "Lingote Soralite",
         "world_tree_holy_water" to "Água Sagrada da Árvore Mundial",
         "mythical_wood" to "Madeira Mítica",
+        "venom_gland" to "Glândula de Veneno",
+        "high_quality_pal_oil" to "Óleo Pal de Alta Qualidade",
+        "wooden_board" to "Tábua de Madeira",
     )
     
     // ============= STRUCTURES (Construções) =============
@@ -150,24 +153,41 @@ object PortugueseTranslations {
         "wheat_plantation" to "Plantação de Trigo",
         "tomato_plantation" to "Plantação de Tomate",
         "vegetable_garden" to "Horta de Vegetais",
+        "lettuce_plantation" to "Plantação de Alface",
+        "cooking_pot" to "Panela de Cozinha",
+        "mill" to "Moinho",
+        "stone_pit" to "Poço de Pedra",
         "ancient_kitchen" to "Cozinha Antiga",
         "ancient_farm" to "Fazenda Antiga",
         
         // ===== DEFENSE (Defesa) =====
-        "primitive_turret" to "Torre Primitiva",
-        "flamethrower_turret" to "Torre Lançachamas",
-        "laser_turret" to "Torre Laser",
-        "cannon_turret" to "Torre de Canhão",
+        "wooden_spike_trap" to "Armadilha de Espinhos de Madeira",
+        "alarm_bell" to "Sino de Alarme",
+        "defensive_wall" to "Parede Defensiva",
+        "wooden_barricade" to "Barricada de Madeira",
+        "musket_turret" to "Torre de Mosquete",
         "ancient_turret" to "Torre Antiga",
         
         // ===== LIGHT (Iluminação) =====
-        "simple_torch_stand" to "Suporte de Tocha Simples",
-        "wood_lantern" to "Lanterna de Madeira",
-        "stone_lantern" to "Lanterna de Pedra",
-        "metal_lantern" to "Lanterna de Metal",
-        "electric_lamp" to "Lâmpada Elétrica",
-        "hanging_lamp" to "Lâmpada Suspensa",
-        "ancient_lamp" to "Lâmpada Antiga",
+        "wall_torch" to "Tocha de Parede",
+        "lamp" to "Lâmpada",
+        "antique_floor_lamp" to "Luminária de Piso Antique Marrom",
+        
+        // ===== OTHER (Outros - Móveis Antiquários) =====
+        "antique_armchair" to "Poltrona Antiquária",
+        "antique_bathtub" to "Banheira Antiquária",
+        "antique_braided_basket" to "Cesta Trançada Antiquária",
+        "antique_carpet" to "Tapete Antiquário",
+        "antique_couch" to "Sofá Antiquário",
+        "antique_curtain" to "Cortina Antiquária",
+        "antique_desk" to "Escrivaninha Antiquária",
+        "antique_dresser" to "Cômoda Antiquária",
+        "antique_globe" to "Globo Antiquário",
+        "antique_grandfather_clock" to "Relógio de Piso Antiquário",
+        "antique_green_carpet" to "Tapete Verde Antiquário",
+        "antique_green_chair" to "Cadeira de Madeira Verde Antiquária",
+        "antique_long_carpet" to "Tapete Longo Antiquário",
+        "aerial_cage" to "Gaiola Aérea",
     )
     
     fun getStructureName(id: String): String = structures[id] ?: id
