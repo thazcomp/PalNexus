@@ -1,0 +1,175 @@
+package com.palhelper.app.data.translations
+
+/**
+ * Portuguese (Brazil) translations for structures and materials.
+ * Organized by ID for easy lookup and maintenance.
+ */
+object PortugueseTranslations {
+    
+    // ============= MATERIALS (Materiais) =============
+    val materials = mapOf(
+        "wood" to "Madeira",
+        "stone" to "Pedra",
+        "ingot" to "Lingote",
+        "paldium_fragment" to "Fragmento Paldium",
+        "fiber" to "Fibra",
+        "cloth" to "Tecido",
+        "nail" to "Prego",
+        "flame_organ" to "Órgão de Chama",
+        "electric_organ" to "Órgão Elétrico",
+        "circuit_board" to "Placa de Circuito",
+        "refined_ingot" to "Lingote Refinado",
+        "cryogenic_coolant" to "Refrigerante Criogênico",
+        "corrosive_solvent" to "Solvente Corrosivo",
+        "cement" to "Cimento",
+        "coralum_ingot" to "Lingote Coralum",
+        "hexolite" to "Hexolite",
+        "plasteel" to "Plasteel",
+        "carbon_fiber" to "Fibra de Carbono",
+        "computer" to "Computador",
+        "bio_battery" to "Bateria Biológica",
+        "thermal_core" to "Núcleo Térmico",
+        "paloxite_ingot" to "Lingote Paloxite",
+        "ai_core" to "Núcleo IA",
+        "ancient_civilization_parts" to "Partes da Civilização Antiga",
+        "ancient_civilization_core" to "Núcleo da Civilização Antiga",
+        "soralite_ingot" to "Lingote Soralite",
+        "world_tree_holy_water" to "Água Sagrada da Árvore Mundial",
+        "mythical_wood" to "Madeira Mítica",
+    )
+    
+    // ============= STRUCTURES (Construções) =============
+    val structures = mapOf(
+        // ===== FOUNDATION (Estrutura) =====
+        "wooden_foundation" to "Fundação de Madeira",
+        "wooden_wall" to "Parede de Madeira",
+        "wooden_triangle_wall" to "Parede Triangular de Madeira",
+        "wooden_roof" to "Telhado de Madeira",
+        "wooden_stairs" to "Escadas de Madeira",
+        "wooden_door" to "Parede e Porta de Madeira",
+        "wooden_window" to "Parede e Janela de Madeira",
+        "wooden_triangle_foundation" to "Fundação Triangular de Madeira",
+        "wooden_pillar" to "Pilar de Madeira",
+        "stone_foundation" to "Fundação de Pedra",
+        "stone_wall" to "Parede de Pedra",
+        "stone_triangle_wall" to "Parede Triangular de Pedra",
+        "stone_roof" to "Telhado de Pedra",
+        "stone_stairs" to "Escadas de Pedra",
+        "stone_door" to "Parede e Porta de Pedra",
+        "stone_window" to "Parede e Janela de Pedra",
+        "stone_pillar" to "Pilar de Pedra",
+        "metal_foundation" to "Fundação de Metal",
+        "metal_wall" to "Parede de Metal",
+        "metal_triangle_wall" to "Parede Triangular de Metal",
+        "metal_roof" to "Telhado de Metal",
+        "metal_stairs" to "Escadas de Metal",
+        "metal_door" to "Parede e Porta de Metal",
+        "metal_pillar" to "Pilar de Metal",
+        "ancient_foundation" to "Fundação Antiga",
+        "ancient_wall" to "Parede Antiga",
+        "ancient_triangle_wall" to "Parede Triangular Antiga",
+        "ancient_roof" to "Telhado Antigo",
+        "ancient_stairs" to "Escadas Antigas",
+        "ancient_door" to "Parede e Porta Antiga",
+        "ancient_window" to "Parede e Janela Antiga",
+        "ancient_pillar" to "Pilar Antigo",
+        "ancient_fence" to "Cerca Antiga",
+        "ancient_triangle_foundation" to "Fundação Triangular Antiga",
+        "ancient_triangle_roof" to "Telhado Triangular Antigo",
+        "ancient_diagonal_wall" to "Parede Diagonal Antiga",
+        "ancient_corner_roof" to "Telhado de Canto Antigo",
+        "ancient_slanted_roof" to "Telhado Inclinado Antigo",
+        "ancient_pyramid_roof" to "Telhado de Pirâmide Antigo",
+        "ancient_pal_passage" to "Entrada de Passagem Pal Antiga",
+        
+        // ===== PRODUCT (Produção) =====
+        "primitive_workbench" to "Bancada Primitiva",
+        "high_quality_workbench" to "Bancada de Alta Qualidade",
+        "advanced_workshop" to "Oficina Avançada",
+        "primitive_furnace" to "Fornalha Primitiva",
+        "improved_furnace" to "Fornalha Melhorada",
+        "electric_furnace" to "Fornalha Elétrica",
+        "ancient_furnace" to "Fornalha Antiga",
+        "weapon_workbench" to "Bancada de Armas",
+        "advanced_weapon_line" to "Linha de Armas Avançada",
+        "sphere_workbench" to "Linha de Montagem de Esferas",
+        "advanced_sphere_line" to "Linha de Esferas Avançada",
+        "power_generator" to "Gerador de Energia",
+        "ancient_power_generator" to "Gerador de Energia Antigo",
+        "ancient_workbench" to "Bancada Antiga",
+        "ancient_material_synth" to "Sintetizador de Materiais Antigo",
+        "ancient_relic_recycler" to "Reciclador de Relíquias Antigo",
+        "medicine_workbench" to "Bancada de Medicamentos",
+        "advanced_medicine_workbench" to "Bancada de Medicamentos Avançada",
+        "production_line_1" to "Linha de Produção 1",
+        "production_line_2" to "Linha de Produção 2",
+        "ancient_production_line" to "Linha de Produção Antiga",
+        "crusher" to "Britador",
+        "ore_mining_site" to "Mina de Minério",
+        "coal_mining_site" to "Mina de Carvão",
+        "sulfur_pit" to "Poço de Enxofre",
+        
+        // ===== STORAGE (Armazenamento) =====
+        "wooden_chest" to "Baú de Madeira",
+        "metal_chest" to "Baú de Metal",
+        "refined_metal_chest" to "Baú de Metal Refinado",
+        "advanced_chest" to "Baú Avançado",
+        "antique_bookshelf" to "Prateleira Antiquária",
+        "antique_cabinet" to "Armário Antiquário",
+        "antique_chest" to "Baú Antiquário",
+        "antique_long_cabinet" to "Armário Longo Antiquário",
+        
+        // ===== PALS =====
+        "palbox" to "Caixa Pal",
+        "feed_box" to "Caixa de Ração",
+        "ranch" to "Rancho",
+        "breeding_farm" to "Fazenda de Reprodução",
+        "egg_incubator" to "Incubadora de Ovos",
+        "high_grade_pal_bed" to "Cama Pal de Alta Qualidade",
+        "large_pal_bed" to "Cama Pal Grande",
+        "ancient_hatchery" to "Incubadora Antiga",
+        "ancient_monitoring_stand" to "Estação de Monitoramento Antiga",
+        
+        // ===== INFRASTRUCTURE (Infraestrutura) =====
+        "campfire" to "Fogueira",
+        "small_pal_bed" to "Cama Pal Pequena",
+        "wooden_bed" to "Cama de Madeira Serena",
+        "comfy_bed" to "Cama Privada Confortável",
+        "heater" to "Aquecedor",
+        "cooler" to "Resfriador",
+        "hot_spring" to "Fonte Termal Melhorada",
+        "accumulator" to "Acumulador",
+        "alpha_wave_generator" to "Gerador de Ondas Alfa",
+        "ancient_air_conditioner" to "Ar Condicionado Antigo",
+        "ancient_clinic" to "Clínica Antiga",
+        "ancient_hot_spring" to "Fonte Termal Antiga",
+        "ancient_pal_bed" to "Cama Pal Antiga",
+        
+        // ===== FOOD (Comida) =====
+        "berry_plantation" to "Plantação de Frutas",
+        "wheat_plantation" to "Plantação de Trigo",
+        "tomato_plantation" to "Plantação de Tomate",
+        "vegetable_garden" to "Horta de Vegetais",
+        "ancient_kitchen" to "Cozinha Antiga",
+        "ancient_farm" to "Fazenda Antiga",
+        
+        // ===== DEFENSE (Defesa) =====
+        "primitive_turret" to "Torre Primitiva",
+        "flamethrower_turret" to "Torre Lançachamas",
+        "laser_turret" to "Torre Laser",
+        "cannon_turret" to "Torre de Canhão",
+        "ancient_turret" to "Torre Antiga",
+        
+        // ===== LIGHT (Iluminação) =====
+        "simple_torch_stand" to "Suporte de Tocha Simples",
+        "wood_lantern" to "Lanterna de Madeira",
+        "stone_lantern" to "Lanterna de Pedra",
+        "metal_lantern" to "Lanterna de Metal",
+        "electric_lamp" to "Lâmpada Elétrica",
+        "hanging_lamp" to "Lâmpada Suspensa",
+        "ancient_lamp" to "Lâmpada Antiga",
+    )
+    
+    fun getStructureName(id: String): String = structures[id] ?: id
+    fun getMaterialName(id: String): String = materials[id] ?: id
+}

@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PalHelper</string>
+    
+    <!-- Resource Calculator -->
+    <string name="calculator_instruction">Toque em uma construção para ver o custo e adicionar</string>
+    <string name="filter_all">Todas</string>
+    <string name="pagination_previous">Anterior</string>
+    <string name="pagination_next">Próxima</string>
+    <string name="pagination_page">Página %1$d / %2$d</string>
+    <string name="pagination_total_structures">%1$d construções</string>
+    <string name="total_resources">Total de recursos (%1$d)</string>
+    <string name="clear_button">Limpar</string>
+    <string name="empty_resources_message">Adicione construções para ver os recursos somados aqui.</string>
+    <string name="structure_cost_title">Custo de construção (por unidade)</string>
+    <string name="tech_level">Tecnologia Lv %1$d</string>
+    <string name="close_button">Fechar</string>
+    
+    <!-- Structure Categories -->
+    <string name="category_foundation">Estrutura</string>
+    <string name="category_product">Produção</string>
+    <string name="category_storage">Armazenamento</string>
+    <string name="category_pals">Pals</string>
+    <string name="category_infrastructure">Infraestrutura</string>
+    <string name="category_food">Comida</string>
+    <string name="category_defense">Defesa</string>
+    <string name="category_light">Iluminação</string>
+    <string name="category_other">Outros</string>
 </resources>
