@@ -32,21 +32,25 @@ diferentes (ex.: madeira do baú + madeira do Palbox viram uma linha só). A ló
 em `ResourceCalculator`, testada por TDD em `ResourceCalculatorTest` (e o estado reativo em
 `ResourceCalculatorViewModelTest`, via Turbine).
 
-Como a lista é grande (**124 construções**), a grade é **paginada**: chips no topo filtram por
+Como a lista é grande (**429 construções**), a grade é **paginada**: chips no topo filtram por
 categoria (Estrutura, Produção, Armazenamento, Pals, Infraestrutura, Comida, Defesa, Iluminação,
 Outros) e o resultado é mostrado 24 por página, com controles *Anterior/Próxima* e um indicador
 `Página X / Y`. Assim só uma página de cards (e de ícones) é renderizada por vez, em vez de
-carregar tudo de uma só vez.
+carregar tudo de uma só vez. Os nomes das construções e materiais são exibidos em **português**.
 
-Os custos e ícones das construções vêm de `palworld.gg/structures` (dados do 1.0), cobrindo os
-conjuntos completos de Madeira/Pedra/Metal/Ancient, os níveis de produção (bancadas, fornalhas,
-linhas de montagem, geradores, minas), armazenamento, Pals, infraestrutura, comida, defesa,
-iluminação e o conjunto de móveis Antigos. **Não** é a lista completa de 490+ estruturas do
-jogo: o `palworld.gg` pagina a lista no navegador (o `?page=` no servidor não funciona) e as
-outras fontes com dados completos são de patches pré-1.0. Então, em vez de chutar custos das
-~360 estruturas que não renderizam (o mesmo erro que causou os bugs de rank no breeding),
-ficaram só as entradas verificáveis — dá para estender adicionando um `Structure` em
-`StructureDataSource.kt`, que a UI paginada exibe automaticamente.
+Os custos das construções vêm de um **arquivo de dados 1.0 verificado** (fornecido e conferido
+contra o jogo), então cada quantidade de material bate com a receita real — diferente das
+primeiras versões, cujos custos vinham de fontes web que misturavam dados pré-1.0 e estavam em
+boa parte errados (a Fazenda de Acasalamento, por exemplo, custava "100 madeira" em vez das 10
+tábuas + 20 pedras + 50 fibras corretas). São **429 construções** cobrindo praticamente tudo:
+os conjuntos completos de Madeira/Pedra/Metal/Vidro/Limpo/Estilo Japonês, todos os níveis de
+produção (bancadas, fornalhas, as linhas de montagem I/II de Produção, Armas e Esferas, minas,
+extratores, moinhos), armazenamento, Pals, infraestrutura, comida/plantações, defesa,
+iluminação e a longa lista de móveis. Os **ícones** ainda são carregados ao vivo do
+`palworld.gg`: as construções com token de ícone conhecido usam o ícone específico, e as demais
+caem num ícone genérico da própria categoria (o arquivo de dados não trazia ícones). Dá para
+ajustar um ícone ou custo editando o `Structure` correspondente em `StructureDataSource.kt`,
+que a UI paginada exibe automaticamente.
 
 ## Como o breeding é calculado
 
